@@ -1,0 +1,315 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*--------------- Main Styles ---------------*/
+
+* {
+	box-sizing: border-box;
+}
+
+header {
+	background-color: #C2C2C2;
+	padding: 0 .5em;
+}
+
+main,
+aside {
+	background: linear-gradient(#C2C2C2, #EFEFEF);
+	text-align: center;
+}
+
+main,
+#about-me {
+	border-bottom: 3px #3D3D3D solid;
+}
+
+footer {
+	text-align: center;
+	padding: 3em 0;
+	background-color: #EFEFEF;
+	text-transform: uppercase;
+	font-size: 1.2em;
+}
+
+a {
+	text-decoration: none;
+	color: #1B1B1B;
+}
+
+header ul {
+	padding-bottom: 2em;
+}
+
+/*--------------- Sub Styles ---------------*/
+
+main img {
+	width: 90%;
+}
+
+a:hover {
+	color: #D40042;
+}
+
+.main-element,
+.secondary-element {
+	padding:0 .8em 2em;
+}
+
+.intro img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-bottom: 3em;
+	width: 80%;
+}
+
+.intro span {
+	text-align: center;
+	display: block;
+	font-size: 1.5em;
+	padding: 0 .8em 2em;
+}
+
+header li {
+	text-align: center;
+	font-size: 1.8em;
+	margin: .5em auto;
+	text-transform: uppercase;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 700;
+	letter-spacing: .1em;
+	width: 250px;
+}
+
+header a {
+	display: block;
+	border: solid #1B1B1B .1em;
+	border-radius: .5em;
+	padding: .5em 0;
+}
+
+footer a {
+	margin-left: 20%;
+	border: solid #1B1B1B .05em;
+	border-radius: .5em;
+	padding: .25em .25em;
+}
+
+footer li,
+footer ul{
+	display: inline;
+}
+
+.footer-menu {
+	display: none;
+}
+
+/*-- Contact Info --*/
+
+.contact-links,
+.contact-titles{
+	text-align: left;
+	float: left;
+	display: block;
+}
+
+.contact-links {
+	padding-left: 2em;
+}
+
+.contact-info {
+	margin: auto;
+	width: 320px;
+	font-size: 1.2em;
+	padding: 2em 0 1.5em;
+}
+
+#contact {
+	position: relative;
+}
+
+.social-links img {
+	width: 1.5em;
+}
+
+.social-links {
+	text-align: left;
+	margin-top: 1em;
+}
+
+/*--------------- Font/Text Styles ---------------*/
+
+h1 {
+	text-align: center;
+	font-size: 2.5em;
+	padding: 1.5em 0 1em;
+	font-weight: 900;
+	letter-spacing: .1em;
+	line-height: 1.2em;
+}
+
+h2 {
+	font-size: 2em;
+	padding: 1.5em 0 1em;
+	font-weight: 600;
+	letter-spacing: .1em;
+}
+
+h3 {
+	font-size: 1.8em;
+	padding: .5em;
+}
+
+h4 {
+	font-size: 1.2em;
+	padding: .5em;
+}
+
+p {
+	font-size: 1.1em;
+	padding-bottom: .8em;
+}
+
+/*-- Font Family --*/
+
+p,
+header li,
+header .intro {
+	font-family: 'robotoregular', sans-serif;
+}
+
+footer,
+#contact span,
+h3,
+h4 {
+	font-family: 'robotomedium', sans-serif;
+}
+
+h1,
+h2 {
+	font-family: 'Rubik', sans-serif;
+}
+
+/*-- Text Color --*/
+
+h1,
+h2,
+footer,
+#contact span,
+h3,
+h4,
+p,
+header li,
+header .intro {
+	color: #1B1B1B;
+}
+
+
+/*--------------- Clear Fix ---------------*/
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*--------------- Media Queries ---------------*/
+
+@media (min-width: 768px) {
+	header li {
+		display: inline-block;
+		width: 170px;
+		font-size: 1.5em;
+	}
+	
+	header ul {
+		text-align: center;
+	}
+	
+	.intro img {
+		float: right;
+		display: inline-block;
+		margin: 0 .8em .5em;
+		width: 40%;
+		max-width: 350px
+	}
+	
+	.main-element {
+		float: left;
+		width: 50%;
+		margin-top: 2em;
+	}
+	
+	footer {
+		padding: 1em 0 3em;
+	}
+	
+	.footer-menu {
+		display: inline;
+	}
+	
+	footer a {
+		margin: .1em;
+		width: 120px;
+		display: inline-block;
+	}
+	
+	.to-top {
+		display: none;
+	}
+	
+	footer span {
+		margin-right: 1.5em;
+	}
+	
+	.intro span {
+		padding: 1em 2em;
+		margin: auto;
+	}
+}
+
+@media (min-width: 1024px) {
+	.main-element {
+		width: 33%;
+		margin-top: 2em;
+	}
+	
+	footer span {
+		margin-right: 7em;
+	}
+	
+	h1 {
+		float: left;
+		padding: 12px 6px;
+		font-size: 2em;
+	}
+	
+	header ul {
+		float: right;
+		padding: 0 6px;
+	}
+	
+	header li {
+		font-size: 1.3em;
+		letter-spacing: .1em;
+		width: 155px;
+	}
+	
+	.header-title-nav {
+		padding: 1em 0 2em;
+	}
+	
+	header .intro {
+		font-size: .9em;
+	}
+	
+	.contact-info {
+		width: 300px;
+		font-size: 1.1em;
+		padding: 1em 0 1.5em;
+	}
+	
+	aside p {
+		padding-bottom: 1.2em;
+	}
+}
